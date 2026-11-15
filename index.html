@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name-="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Melanie Eras</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+    </head>
+    <body class="era-home">
+
+        <section id="home" class="home"
+        <div class="home-content">
+            <h1>Escolha a era</h1>
+            <p class="subtitulo">Qual versão da Melanie você quer visitar hoje?</p>
+
+            <div class="eras">
+                <button class="era-card crybaby" onclick="escolherEra('crybaby')">
+                    <span class="era-nome">Cry Baby</span>
+                    <span class="era-ano">2019</span>
+                </button>
+
+                <button class="era-card k12" onclick="escolherEra('k12')">
+                    <span class="era-nome">K-12</span>
+                    <span class="era-ano">2019</span>
+                </button>
+
+                <button class="era-card portals" onclick="escolherEra('portals')">
+                    <span class="era-nome">Portals</span>
+                    <span class="era-ano">2023</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="conteudo" class="conteudo escondido">
+        <button class="voltar" onclick="voltarHome()">←Voltar</button>
+
+        <header>
+            <h1 id="titulo-era">Cry Baby</h1>
+            <p id="descricao-era" class="descricao"></p>
+        </header>
+
+        <div class="grid">
+            <div class="card">
+                <h2>Sobre a era</h2>
+                <p id="sobre-era"></p>
+            </div>
+
+            <div class="card">
+                <h2>Músicas marcantes</h2>
+                <ul id="musicas"></ul>
+            </div>
+
+            <div class="card">
+                <h2>Atmosfera</h2>
+                <p id="atmosfera"></p>
+            </div>
+        </div>
+
+        <div class="card pessoal">
+            <h2>Nota pessoal</h2>
+            <p id="nota-pessoal"Aqui você pode escrever algo especial para ela sobre essa era</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    </body>
+</html>
